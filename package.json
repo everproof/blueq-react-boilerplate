@@ -1,0 +1,29 @@
+{
+  "name": "blueq-react-boilerplate",
+  "version": "0.0.0",
+  "description": "BlueQ's React App boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueqaus/blueq-react-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "react-router",
+    "redux",
+    "webpack2",
+    "eslint",
+    "react-boilerplate",
+    "boilerplate",
+    "blueq"
+  ],
+  "author": "Rhys Gevaux (https://twitter.com/vorksau)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blueqaus/blueq-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/blueqaus/blueq-react-boilerplate#readme"
+}
