@@ -7,7 +7,10 @@
     "start": "webpack-dev-server",
     "production": "webpack -p",
     "lint:es": "eslint app/. --ext=js --ext=jsx; exit 0",
-    "lint:es:fix": "eslint app/. --ext=js --ext=jsx --fix; exit 0"
+    "lint:es:fix": "eslint app/. --ext=js --ext=jsx --fix; exit 0",
+    "lint:sass": "sass-lint 'app/**/*.scss' --no-exit --verbose",
+    "lint": "npm run lint:es; npm run lint:sass",
+    "lint:fix": "npm run lint:es:fix; npm run lint:sass"
   },
   "repository": {
     "type": "git",
@@ -57,6 +60,7 @@
     "eslint-plugin-react": "^6.10.0",
     "html-webpack-plugin": "^2.28.0",
     "react-hot-loader": "^3.0.0-beta.6",
+    "sass-lint": "^1.10.2",
     "style-loader": "^0.13.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
