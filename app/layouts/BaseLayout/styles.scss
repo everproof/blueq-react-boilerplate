@@ -1,0 +1,9 @@
+@import './app/styles/variables';
+
+.container {
+  background-color: $grey-light;
+  width: 100%;
+  height: 100%;
+  color: $black-text;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

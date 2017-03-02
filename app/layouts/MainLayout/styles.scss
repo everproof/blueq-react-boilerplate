@@ -1,0 +1,14 @@
+@import './app/styles/mixins';
+@import './app/styles/variables';
+
+.content {
+  @include container;
+  min-height: 100%;
+}
+
+.title {
+  @include text-ellipsis;
+  margin-top: 0;
+  text-align: center;
+  color: $primary;
+}
