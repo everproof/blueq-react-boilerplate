@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": [
+    "blueq"
+  ],
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": "webpack"
+  }
+}

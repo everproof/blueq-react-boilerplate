@@ -4,7 +4,8 @@
   "description": "BlueQ's React App boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "lint:es": "eslint app/. --ext=js --ext=jsx; exit 0",
+    "lint:es:fix": "eslint app/. --ext=js --ext=jsx --fix; exit 0"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,18 @@
   "bugs": {
     "url": "https://github.com/blueqaus/blueq-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/blueqaus/blueq-react-boilerplate#readme"
+  "homepage": "https://github.com/blueqaus/blueq-react-boilerplate#readme",
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-blueq": "^1.0.9",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-plugin-babel": "^4.1.0",
+    "eslint-plugin-immutablejs": "^0.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "dependencies": {
+    "webpack": "^2.2.1"
+  }
 }
