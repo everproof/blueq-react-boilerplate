@@ -27,7 +27,22 @@
     "url": "https://github.com/blueqaus/blueq-react-boilerplate/issues"
   },
   "homepage": "https://github.com/blueqaus/blueq-react-boilerplate#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1"
+  },
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0",
     "eslint": "^3.16.1",
     "eslint-config-blueq": "^1.0.9",
     "eslint-import-resolver-webpack": "^0.8.1",
@@ -36,8 +51,5 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0"
-  },
-  "dependencies": {
-    "webpack": "^2.2.1"
   }
 }
