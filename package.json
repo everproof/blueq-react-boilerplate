@@ -1,6 +1,6 @@
 {
   "name": "blueq-react-boilerplate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "BlueQ's React App boilerplate",
   "main": "index.jsx",
   "scripts": {
