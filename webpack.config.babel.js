@@ -1,12 +1,12 @@
 import { resolve } from 'path'
 
-import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import webpack from 'webpack'
 
-const LAUNCH_COMMAND = process.env.npm_lifecycle_event
+import config from './config'
+
+const LAUNCH_COMMAND = config.env.npm_lifecycle_event
 const isProduction = LAUNCH_COMMAND === 'production'
-
-process.env.BABEL_ENV = LAUNCH_COMMAND
 
 const PATHS = {
   app: resolve(__dirname, 'app'),
@@ -40,7 +40,10 @@ const base = {
         exclude: /\/styles\/_{1}.*/,
         use: [
           'style-loader?sourceMap',
-          'css-loader?sourceMap&modules&camelCase=dashes&localIdentName=[name]__[local]___[hash:base64:5]',
+          'css-loader?sourceMap'
+            + '&camelCase=dashes'
+            + '&modules'
+            + '&localIdentName=[name]__[local]___[hash:base64:5]',
           'postcss-loader?sourceMap',
           'sass-loader?sourceMap',
         ],
@@ -91,4 +94,9 @@ const productionConfig = {
   plugins: [HtmlWebpackPluginConfig, productionPlugin],
 }
 
-export default Object.assign({}, base, isProduction ? productionConfig : developmentConfig)
+const extraConfig = isProduction ? productionConfig : developmentConfig
+
+export default {
+  ...base,
+  ...extraConfig,
+}
